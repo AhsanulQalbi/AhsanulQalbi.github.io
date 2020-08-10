@@ -1,212 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Ahsanul Portfolio</title>
-    
-  </head>
-  <body>
-    <div class="container navbar">
-      <header>
-        <div class="lgo">
-          <h1>
-            Ahsanul Qalbi
-          </h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>Portfolio website complete</title>
+
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header" id="navbar">
+            <nav class="nav bd-grid" >
+                <div>
+                    <a href="#" class="nav__logo">Ahsanul Qalbi</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#edu" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#exp" class="nav__link">Experience</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <div id = "home_sec">
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title" style="color:aliceblue;">Hello,<br>I'm <span class="home__title-color">Ahsanul Qalbi</span><br> Junior Programmer</h1>
+                    
+                    <a href="files/CV.pdf" download="files/CV.pdf" class="button"><span style="font-weight: bolder;">Download my CV</span></a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/ahsanul-qalbi/" class="home__social-icon" style="color:aliceblue;"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/AhsanulQalbi/" class="home__social-icon" style="color:aliceblue;"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.instagram.com/ahsanul_qalbi/" class="home__social-icon" style="color:aliceblue;"><i class='bx bxl-instagram' ></i></a>
+                    <p class="home__social-icon" style="color:aliceblue;">ahsanulqalbi@gmail.com</p>
+                </div>
+
+                <!-- <div class="home__img">    
+                    <img src="assets/img/ahsanul.png" alt=""style="margin-left:50px;">
+                </div> -->
+            </section>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#about">about me</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#work">portfolio</a></li>
-          </ul>
-        </nav>
-      </header>
+
+            <!--===== ABOUT =====-->
+        <div id = "about_sec">
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/ahsanul.png" alt="">
+                    </div>
+                    
+                    <div style= " border: solid blue 2px; background-color: white; padding: 25px;">
+                        <h2 class="about__subtitle">Hello!, My name is Ahsanul Qalbi</h2>
+                        <p class="about__text" style = "font-weight: bolder;">I'm an eighth semester computer science student at Multimedia Nusantara University and I have completed my thesis. I'm interested to find working experience as a backend engineer.</p>           
+                    </div>                                   
+                </div>
+            </section>
+        </div> 
+        <div id = "edu_sec">
+            <section class="about section " id="edu">
+                <h2 class="section-title">Education</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/edu.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2>Multimedia Nusantara University</h2>
+                        <p class="about__text">Computer Science Student (2016 - Present)</p> 
+                        <a href = "https://drive.google.com/file/d/1vZO_92KRbObz1q55JbmI8dSTewgj7XMJ/view?usp=sharing" class="about__text">->View Certificate of Graduation</a> 
+                        <h2 style="margin-top: 20px;">SMAN 9 Tangerang Selatan</h2>
+                        <p class="about__text">Science Major Student (2013 - 2016)</p> 
+                        <h2 style="margin-top: 20px;">SMP Waskito Tangerang</h2>
+                        <p class="about__text">(2010 - 2013)</p>           
+                    </div>
+                                                      
+                </div>
+            </section>
+        </div> 
+            <!--===== SKILLS =====-->
+        <div id = "skills_sec">
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Programming Skills</h2>
+                        <p class="skills__text">Programming skills that I have learned from college, online course, and internship</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-android skills__icon'></i>
+                                <span class="skills__name">Android</span>
+                            </div>
+                            <div class="skills__bar skills__android">
+
+                            </div>
+                            <!-- <div>
+                                <span class="skills__percentage">95%</span>
+                            </div> -->
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name">C / C++</span>
+                            </div>
+                            <div class="skills__bar skills__c">
+
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                
+                                <span class="skills__name">HTML </span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-data skills__icon'></i>
+                                <span class="skills__name">MySQL</span>
+                            </div>
+                            <div class="skills__bar skills__mysql">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="fab fa-python" style="color: cornflowerblue; font-size: 40px; padding-right: 15px;"></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="fab fa-php" style="color: cornflowerblue; font-size: 40px; padding-right: 15px;"></i>
+                                
+                                <span class="skills__name">PHP</span>
+                            </div>
+                            <div class="skills__bar skills__php">
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="fab fa-laravel" style="color: cornflowerblue; font-size: 40px; padding-right: 15px;"></i>
+                                <span class="skills__name">Laravel</span>
+                            </div>
+                            <div class="skills__bar skills__laravel">
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name">Django</span>
+                            </div>
+                            <div class="skills__bar skills__laravel">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/laptop.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id = "exp_sec">
+            <section class="about section " id="exp">
+                <h2 class="section-title">Experience</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/exp.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2>Junior Back-End Engineer Intern</h2>
+                        <p class="about__text">PT JULO Teknologi Finansial (June 2019 - September 2019)</p> 
+                        
+                        <h2 style="margin-top: 20px;">Laboratory Assistant</h2>
+                        <p class="about__text">Universitas Multimedia Nusantara (Teaching assistant 2017 - 2018 )</p> 
+
+                        <h2 style="margin-top: 20px;">Himpunan Mahasiswa Teknik Informatika (UMN)</h2>
+                        <p class="about__text">TI Development division (2017 - 2018)</p>           
+                    </div>
+                                                      
+                </div>
+            </section>
+        </div>
+        <div id = "work_sec">
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img" style="padding: 10px; background-color: cornsilk;" onclick="window.location='https://github.com/AhsanulQalbi/skripsiFile';">
+                        <img src="assets/img/portfolio1.PNG" alt="">
+                        <h3 class="caption">Thesis Project</h3>
+                        <p class="caption">Random Forest Implementation for Sentiment Analysis Classification</p>
+                    </div>
+                    <div class="work__img" style="padding: 10px; background-color: cornsilk;" onclick="window.location='https://github.com/AhsanulQalbi/ProjectMobileTematik/tree/master/ProyekTematik';">
+                        <img src="assets/img/android.jpg" alt="">
+                        <h3 class="caption">Jewelry Shop Product Gallery</h3>
+                        <p class="caption">Jewelry Product Gallery Android Application and CRUD website</p>
+                    </div>
+                    <div class="work__img" style="padding: 10px; background-color: cornsilk;" onclick="window.location='https://github.com/AhsanulQalbi/ProjectPemrogramanWeb/blob/master/README.md';">
+                        <img src="assets/img/ecommerce.jpg" alt="">
+                        <h3 class="caption">Ecommerce Website Development</h3>
+                        <p class="caption">Ecommerce website built with PHP, MySQL, and CodeIgniter with Product CRUD</p>
+                    </div>
+                    <div class="work__img" style="padding: 10px; background-color: cornsilk;" onclick="window.location='https://github.com/ian128/RagaBackend';">
+                        <img src="assets/img/api.jpg" alt="">
+                        <h3 class="caption">Laravel Backend API</h3>
+                        <p class="caption">API built with Laravel Framework to be used for 'RAGA' sport mobile apps</p>
+                    </div>
+                    
+                    <div class="work__img" style="padding: 10px; background-color: cornsilk;" onclick="window.location='https://github.com/AhsanulQalbi/ProjectPengantarTeknologiInternet';">
+                        <img src="assets/img/movieDB.PNG" alt="">
+                        <h3 class="caption">MovieDB API</h3>
+                        <p class="caption">Movie database website using themovieDB API built with angular</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+            <!-- ===== CONTACT =====
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button">
+                    </form>
+                </div>
+            </section> -->
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            
+            <p class="footer__title">Contact Me</p>
+           
+            <div class="footer__social">
+                
+                <a href="https://www.linkedin.com/in/ahsanul-qalbi/" class="footer__icon" style="color:aliceblue;"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/AhsanulQalbi/" class="footer__icon" style="color:aliceblue;"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/ahsanul_qalbi/" class="footer__icon" style="color:aliceblue;"><i class='bx bxl-instagram' ></i></a>
+            </div>
+            <p style="padding-bottom: 40px;">ahsanulqalbi@gmail.com</p>
+            <p>Background animation by Vantajs</p>
+        </footer>
 
 
-    </div>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-    <div id= "main" class="container main-info-section">
-      <div class="text">
-        <h1>
-          <span>H</span>
-          <span class = "m-left">i</span>
-          <span class = "m-left">,</span>
-          <br>
-          <span>I</span>
-          <span class = "m-left">'</span>
-          <span class = "m-left">m</span>
-          <span class = "name">A</span>
-          <span class = "m-left name">h</span>
-          <span class = "m-left name">s</span>
-          <span class = "m-left name">a</span>
-          <span class = "m-left name">n</span>
-          <span class = "m-left name">u</span>
-          <span class = "m-left name">l</span>
-          <span class = "m-left name"> </span>
-          <span class = "m-left name">Q</span>
-          <span class = "m-left name">a</span>
-          <span class = "m-left name">l</span>
-          <span class = "m-left name">b</span>
-          <span class = "m-left name">i</span>
-          <span class = "m-left">,</span>
-          <br>
-          <span>J</span>
-          <span class = "m-left">u</span>
-          <span class = "m-left">n</span>
-          <span class = "m-left">i</span>
-          <span class = "m-left">o</span>
-          <span class = "m-left">r</span>
-          <span>P</span>
-          <span class = "m-left">r</span>
-          <span class = "m-left">o</span>
-          <span class = "m-left">g</span>
-          <span class = "m-left">r</span>
-          <span class = "m-left">a</span>
-          <span class = "m-left">m</span>
-          <span class = "m-left">m</span>
-          <span class = "m-left">e</span>
-          <span class = "m-left">r</span>
-          <span class = "m-left">.</span>
-        </h1>
-        <a href="files/CV.pdf" download="files/CV.pdf" style="background-color: aliceblue;"><span style="font-weight: bolder;">Download my CV</span></a>
-      </div>
-      <!-- <div class="profile-image">
-        <img src="img/ahsanul.png" alt="avatar">
-      </div> -->
-    </div>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+        
+        <script src="three.r95.min.js"></script>
+        <script src="vanta.net.min.js"></script>
+        <script>
+        VANTA.NET({
+            el: "#home_sec",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xf93610,
+            backgroundColor: 0x1001d
+        })
+        </script>
+        <script src="vanta.rings.min.js"></script>
+        <script>
+        VANTA.RINGS({
+            el: "#about_sec",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0xffffff
+        })
+        </script>
+        <script src="vanta.globe.min.js"></script>
+        <script>
+        VANTA.GLOBE({
+          el: "#skills_sec",
+          mouseControls: true,
+          touchControls: true,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 0.8,
+          scaleMobile: 1.00,
+          color: 0x4000e3,
+          color2: 0xea06fc,
+          backgroundColor: 0xffffff
+        })
+        </script>
+        <script src="vanta.birds.min.js"></script>
+        <script>
+        VANTA.BIRDS({
+          el: "#work_sec",
+          mouseControls: true,
+          touchControls: true,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          backgroundColor: 0xffffff
+        })
 
-    <div class="container about" id="about">
-      <div class = "color-overlay">
-      
-      <h1 style="z-index: 0;">About</h1>
-      
-
-      <div class="about-me-info">
-        <p>
-          Hello!, I'm Ahsanul Qalbi, I am an eighth semester computer science student at Multimedia Nusantara University and I have completed my thesis. I want to find work experience as a backend engineer.
-        </p>
+        </script>
+        <script src="vanta.dots.min.js"></script>
+        <script>
+        VANTA.DOTS({
+          el: "#edu_sec",
+          mouseControls: true,
+          touchControls: true,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x9320ff,
+            color2: 0xf7f7f7,
+            backgroundColor: 0xffffff,
+        })
+        </script>
+        <script>
+            VANTA.DOTS({
+              el: "#exp_sec",
+              mouseControls: true,
+              touchControls: true,
+              minHeight: 200.00,
+              minWidth: 200.00,
+              scale: 1.00,
+              scaleMobile: 1.00,
+              color: 0x9320ff,
+                color2: 0xf7f7f7,
+                backgroundColor: 0xffffff,
+            })
+            </script>
+        <!-- <script>
+            VANTA.RINGS({
+                el: "#navbar",
+                mouseControls: true,
+                touchControls: true,
+                minHeight: 100.00,
+                minWidth: 200.00,
+                scale: 0.20,
+                scaleMobile: 1.00,
+                backgroundColor: 0xffffff
+            })
+        </script> -->
        
-      </div>
- 
-    </div>
-    </div>
-
-    <div class="container skills" id="skills">
-      <h1>Skills</h1>
-      <div class="html">
-        <div class="tag-html">
-          <p>Android</p>
-        </div>
-        <div class="progressbar">
-          <div class="bar-html">
-          </div>
-        </div>
-      </div>
-      <div class="html">
-        <div class="tag-css">
-          <p>C / C++</p>
-        </div>
-        <div class="progressbar">
-          <div class="bar-css">
-            
-          </div>
-        </div>
-      </div>
-      <div class="html">
-        <div class="tag-js">
-          <p>HTML / CSS / JS</p>
-        </div>
-        <div class="progressbar">
-          <div class="bar-js">
-            
-          </div>
-        </div>
-      </div>
-      <div class="html">
-        <div class="tag-react">
-          <p>MySQL</p>
-        </div>
-        <div class="progressbar">
-          <div class="bar-react">
-          </div>
-        </div>
-      </div>
-      <div class="html">
-        <div class="tag-php">
-          <p>PHP / Laravel</p>
-        </div>
-        <div class="progressbar">
-          <div class="bar-php">
-          </div>
-        </div>
-      </div>
-      <div class="html">
-        <div class="tag-python">
-          <p>Python</p>
-        </div>
-        <div class="progressbar">
-          <div class="bar-python">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container work" id="work">
-      <h1>Portfolio</h1>
-      <div class="category-designing">
-        <a href="https://github.com/AhsanulQalbi/skripsiFile"><img src="img/portfolio1.PNG"><h3 style="color: black;">Thesis Project</h3>
-          <p style="text-align: justify; color: black;">Random Forest Implementation for Sentiment Analysis Classification</p></a>
-        <a href="https://github.com/AhsanulQalbi/ProjectMobileTematik/tree/master/ProyekTematik"><img src="img/android.jpg"><h3 style="color: black;">Jewelry Shop Product Gallery</h3>
-          <p style="text-align: justify; color: black;">Jewelry Product Gallery Android Application and CRUD website</p></a>
-      </a>
-        <a href="https://github.com/ian128/RagaBackend"><img src="img/api.jpg"><h3 style="color: black;">Laravel Backend API</h3>
-          <p style="text-align: justify; color: black;">API built with Laravel Framework to be used for 'RAGA' sport mobile apps</p></a>
-        <a href="https://github.com/AhsanulQalbi/ProjectPemrogramanWeb/blob/master/README.md"><img src="img/ecommerce.jpg"><h3 style="color: black;">Ecommerce Website Development</h3>
-          <p style="text-align: justify; color: black;">Ecommerce website built with PHP, MySQL, and CodeIgniter with Product CRUD</p></a></a>
-        <a href="https://github.com/AhsanulQalbi/ProjectPengantarTeknologiInternet"><img src="img/movieDB.PNG"><h3 style="color: black;">MovieDB API</h3>
-          <p style="text-align: justify; color: black;">Movie database website using themovieDB API built with angular</p></a>
-      </a>
-      </div>
-    </div>
-    <!-- Portfolio Gallery Grid -->
-    
-
-    <div class="container contact" id="contact">
-      <h1>Social Media</h1>
-      <a href="https://www.linkedin.com/in/ahsanul-qalbi/" class="fa fa-linkedin"></a>
-      <a href="https://www.instagram.com/ahsanul_qalbi/" class="fa fa-instagram"></a>
-      <a href="https://github.com/AhsanulQalbi/" class="fa fa-github"></a>
-    </div>
-    <footer>
-      <hr>
-      <p>Ahsanul Qalbi</p>
-    </footer>
-    
-    <script src="js/ScrollMagic.min.js"></script>
-    <script src="js/animation.gsap.min.js"></script>
-    <script src="js/TimelineLite.min.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/CSSPlugin.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/three.r95.min.js"></script>
-    <script src="js/vanta.net.min.js"></script>
-    <script>
-      VANTA.NET({
-        el: "#main",
-        mouseControls: true,
-        touchControls: true,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0xf93610,
-        backgroundColor: 0x1001d
-      })
-      </script>
-  </body>
+    </body>
 </html>
