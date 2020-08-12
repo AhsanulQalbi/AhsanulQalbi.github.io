@@ -296,11 +296,14 @@ img{
 .skills__html{
   width: 80%;
 }
+.skills__nodejs{
+  width: 40%;
+}
 .skills__css{
-  width: 60%;
+  width: 50%;
 }
 .skills__js{
-  width: 60%;
+  width: 40%;
 }
 .skills__mysql{
   width: 80%;
@@ -318,7 +321,7 @@ img{
   width: 70%;
 }
 .skills__laravel{
-  width: 60%;
+  width: 50%;
 }
 .skills__img{
   border-radius: .5rem;
